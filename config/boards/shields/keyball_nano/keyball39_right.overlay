@@ -63,7 +63,7 @@
 
 / {
   trackball_listener {
-    compatible = "zmk,input-listener";
+    compatible = "zmk,input-listener,input-processor-scaler";
     device = <&trackball>;
 
     default_layers {
@@ -71,7 +71,7 @@
         input-processors = <&zip_xy_scaler 0 1>; // block trackball input
     };
 
-    mouse_layer {
+    mouse_layers {
         layers = <2>;
         input-processors = <&zip_xy_scaler 1 1>; // enable trackball in mouse layer
     };
