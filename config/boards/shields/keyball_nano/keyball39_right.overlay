@@ -71,6 +71,6 @@
         layers = <2>;
         input-processors = <&zip_xy_scaler 1 1>; // enable in mouse layer
         process-next;
-    }
+    };
   };
 };
