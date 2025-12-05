@@ -5,6 +5,7 @@
  */
  
 #include "keyball39.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -54,7 +55,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <4>;
+        // automouse-layer = <4>;
 	scroll-layers = <5>;
 	snipe-layers = <6>;
     };
@@ -64,6 +65,12 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+    input-processors = <&zip_xy_scaler 0 1>; // disabled by default
 
+    mouse_layer {
+        layers = <2>;
+        input-processors = <&zip_xy_scaler 1 1>; // enable in mouse layer
+        process-next;
+    }
   };
 };
