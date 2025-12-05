@@ -15,6 +15,8 @@
 #define NUM    4
 #define SYM    5
 #define FUN    6
+#define SCROLL    7
+#define SNIPER    8
 
 // Miryoku-style behavior configurations
 &lt {
@@ -143,6 +145,30 @@
 &kp F10       &kp F1        &kp F2        &kp F3        &kp PAUSE_BREAK               &none         &none         &kp RCTRL     &kp RALT      &none
 &trans        &trans        &trans
                             &kp K_APP     &kp SPACE     &kp TAB                       &trans        &trans                                    &trans
+            >;
+        };
+
+        // SCROLL Layer (Trackball scroll mode)
+        scroll_layer {
+            label = "Scroll";
+            bindings = <
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans
+                            &trans        &trans        &trans                        &trans        &trans                                    &trans
+            >;
+        };
+
+        // SNIPER Layer (Trackball sniper mode)
+        sniper_layer {
+            label = "Sniper";
+            bindings = <
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans
+                            &trans        &trans        &trans                        &trans        &trans                                    &trans
             >;
         };
     };
