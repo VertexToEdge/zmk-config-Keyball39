@@ -128,11 +128,11 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&kp LBRC      &kp AMPS      &kp ASTRK     &kp LPAR      &kp RBRC                      &none         &none         &none         &none         &bootloader
-&kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS                      &none         &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI
-&kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE                      &none         &none         &kp RCTRL     &kp RALT      &none
+&kp LBRC      &kp AMPS      &kp ASTRK     &kp LPAR      &kp RBRC                      &kp RS(SINGLE_QUOTE)   &none         &none         &none         &bootloader
+&kp COLON     &kp DLLR      &kp PRCNT     &kp CARET     &kp PLUS                      &kp SINGLE_QUOTE       &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI
+&kp TILDE     &kp EXCL      &kp AT        &kp HASH      &kp PIPE                      &none                  &none         &kp RCTRL     &kp RALT      &none
 &trans        &trans        &trans
-                            &kp LPAR      &kp RPAR      &kp UNDER                     &trans        &trans                                    &trans
+                            &kp LPAR      &kp RPAR      &kp UNDER                     &trans                 &trans                                    &trans
             >;
         };
 
