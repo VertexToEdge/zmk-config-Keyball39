@@ -80,11 +80,11 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&bootloader   &none         &none         &none         &none                         &kp LC(Z)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Y)
-&kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none                         &caps_word    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
-&none         &kp RALT      &kp RCTRL     &none         &none                         &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END
+&bootloader   &none         &kp C_AC_BACK &kp C_AC_FORWARD    &none                         &kp LC(Z)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Y)
+&kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT           &none                         &caps_word    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+&none         &kp RALT      &kp RCTRL     &none               &none                         &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END
 &trans        &trans        &trans
-                            &trans        &trans        &trans                        &trans        &kp BSPC                                  &kp DEL
+                            &trans        &trans              &trans                        &trans        &kp BSPC                                  &kp DEL
             >;
         };
 
