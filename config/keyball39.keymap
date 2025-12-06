@@ -91,10 +91,10 @@
         // MOUSE Layer (Mouse keys + trackball modes)
         mouse_layer {
             label = "Mouse";
-            bindings = <
+            bindings = <    
 &bootloader   &none         &none         &none         &none                         &kp LC(Z)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Y)
 &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none                         &none         &mkp LCLK     &mkp RCLK     &mkp MCLK     &none
-&none         &kp RALT      &kp RCTRL     &none         &none                         &none         &none         &none         &none         &none
+&none         &kp RALT      &kp RCTRL     &none         &none                         &none         &mo SCROLL    &mo SNIPER    &none         &none
 &trans        &trans        &trans
                             &trans        &trans        &trans                        &trans        &mkp LCLK                                 &mkp RCLK
             >;
