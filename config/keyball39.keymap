@@ -62,8 +62,8 @@
             hold-trigger-on-release;
         };
 
-        // K(RCTRL) 전용 - Ctrl+R 오입력 방지를 위해 require-prior-idle-ms 강화
-        hmr_k: homerow_mods_right_ctrl {
+        // D(LCTRL) 전용 - Ctrl+R 오입력 방지를 위해 require-prior-idle-ms 강화
+        hml_d: homerow_mods_left_ctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -71,7 +71,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <300>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>; // left hand
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 36 37 38>; // right hand
             hold-trigger-on-release;
         };
     };
@@ -84,7 +84,7 @@
             label = "Base";
             bindings = <
 &kp Q         &kp W         &kp E         &kp R         &kp T                                      &kp Y         &kp U         &kp I         &kp O         &kp P
-&hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G                                      &kp H         &hmr RSHFT J  &hmr_k RCTRL K  &hmr RALT L   &hmr RGUI SEMICOLON
+&hml LGUI A   &hml LALT S   &hml_d LCTRL D  &hml LSHFT F  &kp G                                      &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SEMICOLON
 &kp Z         &kp X         &kp C         &kp V         &kp B                                      &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 &kp LCTRL     &kp LGUI      &kp LALT
                             &lt MEDIA ESC &lt NAV SPACE  &lt MOUSE TAB                             &lt SYM RET  &lt NUM BSPC                              &lt FUN DEL
